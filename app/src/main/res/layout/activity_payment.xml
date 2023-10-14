@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity"
+    android:background="@color/primary"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="30dp"
+        >
+
+        <TextView
+            android:id="@+id/tvPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Payment Method"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/btn_back"
+            />
+
+        <TextView
+            android:id="@+id/tvBioskop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Bioskop"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_below="@id/tvPayment"
+            android:layout_marginTop="15dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerJenisBioskop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvBioskop"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="5dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/rounded_spinner_background"
+            />
+
+        <TextView
+            android:id="@+id/tvSeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Seat"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_below="@id/spinnerJenisBioskop"
+            android:layout_marginTop="15dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerJenisSeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvSeat"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="5dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/rounded_spinner_background"
+            />
+
+        <TextView
+            android:id="@+id/tvTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Tanggal"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_below="@id/spinnerJenisSeat"
+            android:layout_marginTop="15dp"
+            />
+
+        <DatePicker
+            android:id="@+id/dpTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:layout_marginVertical="10dp"
+            android:background="@color/grey"
+            android:calendarViewShown="false"
+            android:layout_below="@id/tvTanggal"
+            android:layout_centerHorizontal="true"
+            />
+
+<!--        <Button-->
+<!--            android:id="@+id/tpButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="@color/btn_color"-->
+<!--            android:layout_below="@id/dpTanggal"-->
+<!--            android:text="Pilih Jam"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            />-->
+
+        <TextView
+            android:id="@+id/tvHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Bayar"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_below="@id/dpTanggal"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tvTotalHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 35.000"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_below="@id/dpTanggal"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tvPaymentMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metode Pembayaran"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_below="@id/tvHarga"
+            android:layout_marginTop="15dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerPaymentType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPaymentMethod"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="5dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/rounded_spinner_background"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerPaymentType">
+            <Spinner
+                android:id="@+id/spinnerBank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rounded_spinner_background"
+                />
+
+            <EditText
+                android:id="@+id/etAccountNumber"
+                android:hint="Account Number"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_white_edittext"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnOrderSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/btn_color"
+            android:layout_alignParentBottom="true"
+            android:text="Order Summary"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

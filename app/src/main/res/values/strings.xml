@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MovieKuy</string>
+    <string name="movie_details">U.S. Navy Cmdr. Ernest Krause is assigned to lead an Allied convoy across
+        the Atlantic during World War II. His convoy, however, is pursued by German U-boats. Although this is Krause
+        first wartime mission, he finds himself embroiled in what would come to be known as the longest, largest and
+        most complex naval battle in history: The Battle of the Atlantic.</string>
+    <array name="bioskop">
+        <item>XXI Ambarukmo Plaza</item>
+        <item>XXI Empire</item>
+        <item>XXI Pakuwon Mall</item>
+        <item>CGV Lippo Plaza</item>
+    </array>
+    <array name="seat">
+        <item>Regular Seat</item>
+        <item>VIP Seat</item>
+        <item>VVIP Seat</item>
+    </array>
+    <array name="paymentmethod">
+        <item>Bank Transfer</item>
+        <item>On-Site Payment</item>
+        <item>Paylater</item>
+    </array>
+    <array name="banks">
+        <item>BNI</item>
+        <item>BCA</item>
+        <item>BRI</item>
+
+    </array>
+</resources>

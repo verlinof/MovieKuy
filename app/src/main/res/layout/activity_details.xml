@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity"
+    android:background="@color/primary"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="30dp"
+            >
+
+                <TextView
+                    android:id="@+id/tvDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Details Movie"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    />
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:src="@drawable/btn_back"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ivPoster"
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp"
+                    android:layout_marginVertical="25dp"
+                    android:layout_below="@id/tvDetails"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/greyhound"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Greyhound"
+                    android:textSize="23dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/ivPoster"
+                    />
+
+                <TextView
+                    android:id="@+id/tvDirector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTitle"
+                    android:text="Verlino Raya F."
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppinsregular"
+                    />
+
+                <TextView
+                    android:id="@+id/tvRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tvDirector"
+                    android:layout_toEndOf="@id/tvDirector"
+                    android:text="Rating : 4.5"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <Button
+                    android:id="@+id/category1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/btn_color"
+                    android:clickable="false"
+                    android:text="War"
+                    android:layout_below="@id/tvDirector"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/btn_color"
+                    android:text="History"
+                    android:clickable="false"
+                    android:layout_below="@id/tvDirector"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_toEndOf="@id/category1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvStoryline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Storyline"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@id/category1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvSinopsis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/movie_details"
+                    android:layout_marginVertical="5dp"
+                    android:layout_below="@id/tvStoryline"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppinsregular"
+                    android:justificationMode="inter_word"
+                    />
+
+                <Button
+                    android:id="@+id/btnTiket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/btn_color"
+                    android:layout_marginVertical="20dp"
+                    android:layout_below="@id/tvSinopsis"
+                    android:text="Get Ticket"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:paddingVertical="8dp"
+                    android:textSize="18dp"
+                    />
+
+            </RelativeLayout>
+        </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
