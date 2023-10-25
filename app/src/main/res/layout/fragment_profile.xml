@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity"
+    android:background="@color/primary"
+    android:paddingHorizontal="30dp"
+    android:paddingVertical="30dp"
+    >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivProfilePicture"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile_picture"
+        app:shapeAppearanceOverlay="@style/Circular"
+        android:layout_marginBottom="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivProfilePicture"
+        android:text="Username"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppinssemibold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/btn_color"
+        android:layout_alignParentBottom="true"
+        android:text="Logout"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="18dp"
+        />
+
+</RelativeLayout>

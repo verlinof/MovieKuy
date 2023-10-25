@@ -44,7 +44,7 @@ class PaymentActivity : AppCompatActivity() {
 
 
             btnBack.setOnClickListener(){
-                val intent = Intent(this@PaymentActivity, DashboardActivity::class.java)
+                val intent = Intent(this@PaymentActivity, DetailsActivity::class.java)
                 startActivity(intent)
 
                 finish()
